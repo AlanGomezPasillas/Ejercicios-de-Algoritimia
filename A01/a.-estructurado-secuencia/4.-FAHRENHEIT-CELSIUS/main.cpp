@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 	float C,F;
-	cout<<"FAHRENHEIT A CELSiSUS\n\n";
+	cout<<"FAHRENHEIT A CELSISUS\n\n";
 	//cout<<"Ingresa la temperatura en "<<(char)167<<": ";
 	cout<<"Ingresa la temperatura en grados Fahrenheit: ";
 	cin>>F;
