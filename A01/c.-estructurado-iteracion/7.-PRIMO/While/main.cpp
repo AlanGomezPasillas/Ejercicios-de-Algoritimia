@@ -8,7 +8,7 @@ int main(){
 	cout<<"Ingresa un numero: ";
 	cin>>num;
 
-  int i=num-1;
+	int i=num-1;
 	while(--i>1){
 		if(num%i==0){
 			esPrimo = false;
