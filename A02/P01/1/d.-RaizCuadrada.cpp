@@ -2,7 +2,6 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
-#include <vector> 
 #include <ctime>
 #include <cmath>
 using namespace std;
@@ -28,21 +27,15 @@ string formatTime(long double t) {
 	return time.str();
 }
 
-void criba(int num, vector<bool> &primes){
-	primes = vector<bool>(num, true);
-	for(long long i = 2; i < sqrt(num); i++) {
-		for (long long j = i; j*i <= num; j++) {
-			primes[(i*j)-1]=0;
-		}
+bool isPrime(long long num) {
+	for(long long i = 2; i <= sqrt(num); i++){
+		if (num % i == 0) return false;
 	}
-}
-
-bool isPrime(long long num, vector<bool> primes) {
-	return primes[num-1];
+	
+	return true;
 }
 
 int main() {
-	vector<bool> primes;
 	long long number;
 	bool prime;
 	clock_t t;
@@ -50,15 +43,9 @@ int main() {
 	
 	cin >> number;
 	
-	criba(number, primes);
 	t = clock();
-	prime = isPrime(number, primes);
+	prime = isPrime(number);
 	t = clock() - t;
-
-	/*for(int i = 0; i < primes.size(); i++) 
-		cout << primes.at(i) << " ";
-	cout << endl;*/
-
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
 
 	cout << number << ' ';

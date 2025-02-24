@@ -28,7 +28,7 @@ string formatTime(long double t) {
 }
 
 bool isPrime(long long num) {
-	for(long long i = 2; i < sqrt(num); i++){
+	for(long long i = 2; i <= sqrt(num); i++){
 		if (num % i == 0) return false;
 	}
 	
@@ -36,21 +36,20 @@ bool isPrime(long long num) {
 }
 
 int main() {
-	long long number;
-	bool prime;
+	long long number1, number2;
+	int primes = 0;
 	clock_t t;
 	string time;
 	
-	cin >> number;
+	cin >> number1 >> number2;
 	
 	t = clock();
-	prime = isPrime(number);
+	for(long long i = number1; i < number2; i++)
+		primes += isPrime(i);
 	t = clock() - t;
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
 
-	cout << number << ' ';
-	prime? cout << "si" : cout << "no";
-	cout << " es primo." << endl;
+	cout << "Total: " << primes << endl;
 	cout << "Tiempo: " << time << endl;
 
 	return 0;
