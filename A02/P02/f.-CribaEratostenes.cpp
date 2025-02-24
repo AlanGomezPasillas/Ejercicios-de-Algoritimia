@@ -32,6 +32,7 @@ string formatTime(long double t) {
 void criba(long long num1, long long num2, vector<bool> &primes){
 	primes = vector<bool>(num2 - num1, true);
 	for(long long i = 2; i <= sqrt(num2); i++) {
+		if(primes.at(i-1))
 		for (long long j = i; j*i <= num2; j++) {
 			primes[(i*j)-num1]=0;
 		}
@@ -50,15 +51,18 @@ int main() {
 	clock_t t;
 	string time;
 	
-	t = clock();
+	
 	while(1){
 		cin >> number;
 		if (number == -1) break;
 		numbers.push_back(number);
 	}
-	min = *min_element(numbers.begin(), numbers.end());
-	max = *max_element(numbers.begin(), numbers.end());
-	criba(min, max+1, primes);
+	if(numbers.size() > 0){
+		min = *min_element(numbers.begin(), numbers.end());
+		max = *max_element(numbers.begin(), numbers.end());
+		criba(min, max+1, primes);
+	}
+	t = clock();
 	for(long long i = 0; i < numbers.size(); i++){
 		nPrimes += isPrime(numbers.at(i)-min, primes);
 	}
