@@ -21,30 +21,34 @@ def format_time(t):
     return time_formatted
 
 
-def is_prime(num):
-    res = True
+def get_divs(num):
+    cnt_d = 2
 
     for i in range(2, num):
-        if num % i == 0: res = False
+        if num % i == 0: cnt_d += 1
 
-    return res
+    return cnt_d
+
+def is_prime(divs):
+    return (divs == 2)
     
 
 def main():
     number = 0
     prime = True
+    divs = 0
     exec_time = ""
     t = 0.0
 
     number = int(input())
     
     t = time.time()
-    prime = is_prime(number)
+    divs = get_divs(number)
     t = time.time() - t
     exec_time = format_time(t);
     
 
-    print(number, "si" if prime else "no", "es primo")
+    print(number, "si" if is_prime(divs) else "no", "es primo")
     print("Total:", exec_time)
 
 if __name__ == "__main__":
