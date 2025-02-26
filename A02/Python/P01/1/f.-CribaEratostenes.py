@@ -1,4 +1,5 @@
 import time
+import math
 
 def format_time(t):
     time_formatted = ""
@@ -21,28 +22,37 @@ def format_time(t):
     return time_formatted
 
 
-def is_prime(num):
-    res = True
+def criba(num):
+    primes = {key: True for key in range(num+1)}
+    for i in range(2, int(math.sqrt(num))+1):
+        if primes.get(i):
+            j = i
+            while (j*i < num+1):
+                primes[(i*j)-1] = False;
+                j += 1
 
-    for i in range(2, num):
-        if num % i == 0: res = False
+    return primes
 
-    return res
-    
+
+def is_prime(num, primes):
+
+    return primes.get(num-1)
+
 
 def main():
     number = 0
+    primes = {}
     prime = True
     exec_time = ""
     t = 0.0
 
     number = int(input())
     
+    primes = criba(number)
     t = time.time()
-    prime = is_prime(number)
+    prime = is_prime(number, primes)
     t = time.time() - t
     exec_time = format_time(t);
-    
 
     print(number, "si" if prime else "no", "es primo")
     print("Total:", exec_time)

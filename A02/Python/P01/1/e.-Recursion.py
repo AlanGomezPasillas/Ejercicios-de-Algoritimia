@@ -1,4 +1,5 @@
 import time
+import math
 
 def format_time(t):
     time_formatted = ""
@@ -21,14 +22,12 @@ def format_time(t):
     return time_formatted
 
 
-def is_prime(num):
-    res = True
+def is_prime(num, i = 2):
+    if num == 2: return True
+    if num % i == 0: return False
+    if i > math.sqrt(num): return True
 
-    for i in range(2, num):
-        if num % i == 0: res = False
-
-    return res
-    
+    return is_prime(num, i+1)
 
 def main():
     number = 0
@@ -42,7 +41,6 @@ def main():
     prime = is_prime(number)
     t = time.time() - t
     exec_time = format_time(t);
-    
 
     print(number, "si" if prime else "no", "es primo")
     print("Total:", exec_time)

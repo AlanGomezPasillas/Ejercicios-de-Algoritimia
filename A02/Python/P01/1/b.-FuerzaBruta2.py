@@ -16,7 +16,7 @@ def format_time(t):
     time_formatted += (("0" + str(hour)) if hour < 10 else str(hour)) + ':'
     time_formatted += (("0" + str(minute)) if minute < 10 else str(minute)) + ':'
     time_formatted += (("0" + str(second)) if second < 10 else str(second)) + '.'
-    time_formatted += (("0" + str(milisecond)) if milisecond < 10 else str(milisecond))
+    time_formatted += '{:0>4}'.format(milisecond)
     
     return time_formatted
 
