@@ -11,13 +11,13 @@ def format_time(t):
     t = t - (minute*60)
     second = int(t//1)
     t = t - second
-    print(t)
-    milisec = int(t*10000)
-    print(milisecond)
+    t = int(t*10000)
+    milisecond = t
+    
     time_formatted += (("0" + str(hour)) if hour < 10 else str(hour)) + ':'
-    time_formatted += (("0" + str(minute)) if hour < 10 else str(minute)) + ':'
-    time_formatted += (("0" + str(second)) if hour < 10 else str(second)) + '.'
-    time_formatted += (("0" + str(milisecond)) if hour < 10 else str(milisecond))
+    time_formatted += (("0" + str(minute)) if minute < 10 else str(minute)) + ':'
+    time_formatted += (("0" + str(second)) if second < 10 else str(second)) + '.'
+    time_formatted += (("0" + str(milisecond)) if milisecond < 10 else str(milisecond))
     
     return time_formatted
 
