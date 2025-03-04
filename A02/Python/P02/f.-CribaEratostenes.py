@@ -23,23 +23,24 @@ def format_time(t):
 
 
 def criba(num1, num2):
-    primes = {key: True for key in range(num2 - num1)}
+    primes = [True for i in range(num2 - num1)]
     i = 2
+    #print(primes)
 
     while i <= math.sqrt(num2):
-        #print(i)
-        if primes.get(i-num1):
+        #print("if",i)
+        if primes[i-1]:
             j = i
-            while j*i <= num2:
+            while (j*i) < num2:
                 #print(i,'x',j,'=',j*i,(i*j)-num1)
                 primes[(i*j)-num1] = False;
                 j += 1
         i += 1
     #print(i,math.sqrt(num2))
     i=2
-    for v in primes.values():
+    #for v in primes:
         #print(i,v)
-        i+=1
+        #i+=1
 
     return primes
 
@@ -48,7 +49,7 @@ def main():
     mi = ma = 0
     number = 0
     numbers = []
-    primes = {}
+    primes = []
     n_primes = 0
     exec_time = ""
     t = 0.0
@@ -58,9 +59,11 @@ def main():
         if number == -1: break
         numbers.append(number)
 
-    if len(numbers) != []:
+    if len(numbers) != 0:
         mi = min(numbers)
         ma = max(numbers)
+
+        if mi == ma: mi = 0
 
         primes = criba(mi, ma+1)
 
@@ -68,10 +71,13 @@ def main():
     #for val in primes.values():
         #if val: n_primes += 1
     for num in numbers:
-        if primes.get(num-mi): n_primes += 1
+        if primes[num-mi]:
+            n_primes += 1
+            #print(num)
     t = time.time() - t
     exec_time = format_time(t);
-
+    
+    #print(primes)
     print("Total:", n_primes)
     print("Tiempo:", exec_time)
 

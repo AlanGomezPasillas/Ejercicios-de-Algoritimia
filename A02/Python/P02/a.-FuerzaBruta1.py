@@ -25,6 +25,8 @@ def is_prime(num):
     res = True
 
     for i in range(2, num):
+        #if i % 50000000 == 0:
+            #print("He llegado a:",i)
         if num % i == 0: res = False
 
     return res
@@ -39,6 +41,7 @@ def main():
     while True:
         number = int(input())
         if number == -1: break
+        #print(number)
         if is_prime(number): primes += 1
     t = time.time() - t
     exec_time = format_time(t);
