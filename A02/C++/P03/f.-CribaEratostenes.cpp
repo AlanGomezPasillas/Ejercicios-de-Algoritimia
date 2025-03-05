@@ -5,12 +5,10 @@
 #include <string>
 #include <ctime>
 #include <cmath>
-//#define MIN 3221225472
-//#define MAX 3221226472
-#define MIN 20
-#define MAX 50
-#define SIZE 31
-#define ull unsigned long long int
+#define MIN 3221225472
+#define MAX 3221226472
+#define SIZE MAX
+#define TYPE unsigned int
 using namespace std;
 
 string formatTime(long double t) {
@@ -34,35 +32,27 @@ string formatTime(long double t) {
 	return time.str();
 }
 
-void criba(ull num1, ull num2, bool (&primes)[SIZE]){
-	//cout<<sqrt(num2)<<' '<<num2<<' '<<(2<=sqrt(num2))<<endl;
-	for(ull i = num1; i <= sqrt(num2); i+=1){
-		//cout<<i<<' '<<endl;
-		//printf("%d\n",i);
-		if(primes[num1-i])
-			for (ull j = 2; j*i <= num2; j+=1){
-				//printf("%d\n",i*j);
-				primes[(i*j)-num1]=0;
-			}
-	}
+void criba(bool primes[]){
+	for(TYPE i = 2; i <= sqrt(MAX+1); i++)
+		if(primes[i])
+			for (TYPE j = i; j*i <= MAX+1; j++)
+				primes[(i*j)]=0;
 }
 
 int main() {
-	bool primes[SIZE];
-	unsigned int nPrimes = 0;
+	bool* primes = new bool[SIZE];
+	int nPrimes = 0;
 	clock_t t;
 	string time;
 	
-	for(int i = 0; i < SIZE; i++)
-		primes[i] = 1;
+	for(TYPE i = 0; i < SIZE; i++) primes[i] = 1;
 	
 	t = clock();
-	criba(MIN, MAX+1, primes);
-	for(int i = 0; i < SIZE; i++){
-		nPrimes += primes[i];
-		cout<<i+MIN<<" "<<primes[i]<<endl;
-	}
+	criba(primes);
+	for(TYPE i = MIN; i < SIZE; i++) nPrimes += primes[i];
 	t = clock() - t;
+
+	delete [] primes;
 
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
 

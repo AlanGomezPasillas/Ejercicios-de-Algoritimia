@@ -3,7 +3,6 @@
 #include <sstream>
 #include <string>
 #include <ctime>
-#include <cmath>
 #define MIN 3221225472
 #define MAX 3221226472
 using namespace std;
@@ -31,9 +30,9 @@ string formatTime(long double t) {
 
 bool isPrime(unsigned int num) {
 	bool res = true;
-	for(unsigned int i = 2; i < sqrt(num); i++)
+	for(unsigned int i = 2; i < num; i++)
 		if (num % i == 0) res = false;
-	
+
 	return res;
 }
 
