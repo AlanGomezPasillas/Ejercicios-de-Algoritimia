@@ -41,15 +41,16 @@ void criba(bool primes[]){
 
 int main() {
 	bool* primes = new bool[SIZE];
+	int operations = 0;
 	int nPrimes = 0;
 	clock_t t;
 	string time;
 	
 	for(TYPE i = 0; i < SIZE; i++) primes[i] = 1;
 	
-	t = clock();
 	criba(primes);
-	for(TYPE i = MIN; i < SIZE; i++) nPrimes += primes[i];
+	t = clock();
+	for(TYPE i = MIN; i <= SIZE; i++){nPrimes += primes[i]; operations++;}
 	t = clock() - t;
 
 	delete [] primes;
@@ -57,6 +58,7 @@ int main() {
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
 
 	cout << "Total: " << nPrimes << endl;
+	cout << "Operaciones: " << operations << endl;
 	cout << "Tiempo: " << time << endl;
 
 	return 0;

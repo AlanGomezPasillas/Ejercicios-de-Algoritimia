@@ -29,29 +29,31 @@ string formatTime(long double t) {
 	return time.str();
 }
 
-bool isPrime(long long num, long long i = 2) {
+bool isPrime(unsigned int num, long long &operations, unsigned int i = 2) {
 	if (num == 2) return true;
 	if (i > sqrt(num)) return true;
-	if (num % i == 0) return false;
+	operations++;
+	if (num % i == 0) return false; 
 
-	return isPrime(num, i+1);
+	return isPrime(num, operations, i+1);
 }
 
 int main() {
+	long long operations = 0;
 	int primes = 0;
 	clock_t t;
 	string time;
 	
 	t = clock();
-	for(unsigned int i = MIN; i < MAX; i++){
-		primes += isPrime(i);
-		if(isPrime(i))cout<<i<<endl;
+	for(unsigned int i = MIN; i <= MAX; i++){
+		primes += isPrime(i, operations);
 	}
 	t = clock() - t;
 	
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
 
 	cout << "Total: " << primes << endl;
+	cout << "Operations: " << operations << endl;
 	cout << "Tiempo: " << time << endl;
 
 	return 0;
