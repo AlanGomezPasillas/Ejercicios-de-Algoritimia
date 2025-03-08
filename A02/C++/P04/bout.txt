@@ -1,0 +1,3 @@
+Total: 148456
+Operaciones: 1999367971807
+Tiempo: 05:19:19.7308
