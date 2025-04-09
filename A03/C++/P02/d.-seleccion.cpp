@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
+#include <vector>
 #include <ctime>
 using namespace std;
 
@@ -26,7 +27,7 @@ string formatTime(long double t) {
 	return time.str();
 }
 
-string arrStr(int n, int nums[]){
+string arrStr(long n, vector<long> &nums){
 	ostringstream arr;
 
 	for(int i = 0; i < n; i++){
@@ -36,38 +37,44 @@ string arrStr(int n, int nums[]){
 	return arr.str();
 }
 
-void bubbleSort(int n, int nums[]){
-	for(int i = 0; i < n-1; i++)
-		for(int j = 0; j < n-1; j++)
-			if (nums[j] > nums[j+1]){
-				int aux = nums[j];
-				nums[j] = nums[j+1];
-				nums[j+1] = aux;
-			}
+void swap(vector<long> &nums, long a, long b){
+	nums[b] = nums[a] ^ nums[b];
+	nums[a] = nums[a] ^ nums[b];
+	nums[b] = nums[a] ^ nums[b];
+}
+
+void insertionSort(long n, vector<long> &nums){
+	for(long i = 1; i < n; i++){
+		long j = i;
+		while(j > 0 && (nums[j-1] > nums[j])){
+			swap(nums, j, j-1);
+			j--;
+		}
+	}
 }
 
 int main(){
 	string time;
-	int n, num;
+	long n = 0, num;
+	vector<long> nums;
 	time_t t;
-
-	cin >> n;
-
-	int nums[n];
-	for(int i = 0; i < n; i++){
+	
+	while(1){
 		cin >> num;
-		nums[i] = num;
+		if (num == -1) break;
+		nums.push_back(num);
+		n++;
 	}
-
-	cout << "Antes: " << arrStr(n, nums) << endl;
-
+	
+	//cout << "Antes: " << arrStr(n, nums) << endl;
+	
 	t = clock();
-	bubbleSort(n, nums);
+	insertionSort(n, nums);
 	t = clock() - t;
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
-
-	cout << "Ahora: " << arrStr(n, nums) << endl;
+	
+	//cout << "Ahora: " << arrStr(n, nums) << endl;
 	cout << "Tiempo: " << time << endl;
-
+	
 	return 0;
 }

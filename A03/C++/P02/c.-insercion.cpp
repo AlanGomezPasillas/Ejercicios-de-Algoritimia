@@ -36,42 +36,43 @@ string arrStr(int n, int nums[]){
 	return arr.str();
 }
 
-void bubbleSort(int n, int nums[]){
-	for(int i = 0; i < n-1; i++){
-		bool swapped = false;
-		for(int j = 0; j < n-i-1; j++)
-			if (nums[j] > nums[j+1]){
-				nums[j+1] = nums[j] ^ nums[j+1];
-				nums[j] = nums[j] ^ nums[j+1];
-				nums[j+1] = nums[j] ^ nums[j+1];
-				swapped = true;
-			}
-		if (!swapped) break;
+void swap(int nums[], int a, int b){
+	nums[b] = nums[a] ^ nums[b];
+	nums[a] = nums[a] ^ nums[b];
+	nums[b] = nums[a] ^ nums[b];
+}
+
+void insertionSort(int n, int nums[]){
+	for(int i = 1; i < n; i++){
+		int j = i;
+		while(j > 0 && (nums[j-1] > nums[j])){
+			swap(nums, j, j-1);
+			j--;
+		}
 	}
 }
 
 int main(){
 	string time;
 	int n, num;
-	time_t t;
-
 	cin >> n;
-
+	time_t t;
+	
 	int nums[n];
 	for(int i = 0; i < n; i++){
 		cin >> num;
 		nums[i] = num;
 	}
-
+	
 	cout << "Antes: " << arrStr(n, nums) << endl;
-
+	
 	t = clock();
-	bubbleSort(n, nums);
+	insertionSort(n, nums);
 	t = clock() - t;
 	time = formatTime(((long double)t)/CLOCKS_PER_SEC);
-
+	
 	cout << "Ahora: " << arrStr(n, nums) << endl;
 	cout << "Tiempo: " << time << endl;
-
+	
 	return 0;
 }
