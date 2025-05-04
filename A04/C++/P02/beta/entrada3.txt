@@ -1,0 +1,81 @@
+36 Viaducto
+37 Xola
+38 Villa de Cortés
+39 Nativitas
+40 Portales
+41 Ermita
+42 General Anaya
+43 Tasqueña
+44 Indios Verdes
+45 Deportivo 18 de Marzo
+46 Potrero
+47 La Raza
+48 Tlatelolco
+49 Guerrero
+50 Hidalgo
+51 Juarez
+52 Balderas
+53 Niños Heroes
+54 Hospital General
+55 Centro Médico
+56 Etiopia
+57 Eugenia
+58 Disión del Norte
+59 Zapata
+60 Coyoacán
+61 Viveros
+62 M. A. De Quevedo
+63 Copilco
+64 Universidad
+65 Martín Carrera
+66 Talismán
+67 Bondojito
+68 Consulado
+69 Canal del Norte
+70 Morelos
+71 Candelaria
+72 Fray Servando
+73 Jamaica
+74 Santa Anita
+75 Politecnico
+76 Instituto del Petroleo
+77 Autobuses del Norte
+78 Misterios
+79 Valle Gomez
+80 Eduardo Molina
+81 Aragon
+82 Oceania
+83 Terminal Aerea
+84 Hangares
+85 Pantitlan
+86 El Rosario
+87 Tezozomoc
+88 Azcapotzalco
+89 Ferreria
+90 Norte 45
+91 Vallejo
+92 Lindavista
+93 La Villa - Basilica
+94 Aquiles Serdan
+95 Camarones
+96 Refineria
+97 Tacuba
+98 San Joaquin
+99 Auditorio
+100 Constituyentes
+101 Tacubaya
+102 San Pedro de los Pinos
+103 San Antonio
+104 Mixcoac
+105 Barranca del Muerto
+106 Garibaldi
+107 Bellas Artes
+108 San Juan de Letran
+109 Salto del Agua
+110 Doctores
+111 Obreara
+112 Chabacano
+113 La Viga
+114 Coyuya
+115 Iztacalco
+116 Apatlaco

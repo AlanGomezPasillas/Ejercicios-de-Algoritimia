@@ -1,3 +1,4 @@
+165
 1 Observatorio
 2 Tacubaya
 3 Juanacatlán
@@ -8,7 +9,7 @@
 8 Balderas
 9 Salto del Agua
 10 Isabel la Católica
-11 Pino Suarez
+11 Pino Suárez
 12 Merced
 13 Candelaria
 14 San Lázaro
@@ -41,3 +42,126 @@
 41 Ermita
 42 General Anaya
 43 Tasqueña
+44 Indios Verdes
+45 Deportivo 18 de Marzo
+46 Potrero
+47 La Raza
+48 Tlatelolco
+49 Guerrero
+50 Juárez
+51 Niños Héroes
+52 Hospital General
+53 Centro Médico
+54 Etiopía / Plaza de la Transparencia
+55 Eugenia
+56 División del Norte
+57 Zapata
+58 Coyoacán
+59 Viveros / Derechos Humanos
+60 Miguel Ángel de Quevedo
+61 Copilco
+62 Universidad
+63 Martín Carrera
+64 Talismán
+65 Bondojito
+66 Consulado
+67 Canal del Norte
+68 Morelos
+69 Fray Servando
+70 Jamaica
+71 Santa Anita
+72 Politécnico
+73 Instituto del Petróleo
+74 Autobuses del Norte
+75 Misterios
+76 Valle Gómez
+77 Eduardo Molina
+78 Aragón
+79 Oceanía
+80 Terminal Aérea
+81 Hangares
+82 El Rosario
+83 Tezozómoc
+84 Azcapotzalco
+85 Ferrería / Arena Ciudad de México
+86 Norte 45
+87 Vallejo
+88 Insituto del Petróleo
+89 Lindavista
+90 La Villa-Basílica
+91 Aquiles Serdán
+92 Camarones
+93 Refinería
+94 San Joaquín
+95 Polanco
+96 Auditorio
+97 Constituyentes
+98 Sn. Pedro de los Pinos
+99 Sn. Antonio
+100 Mixcoac
+101 Barranca del Muerto
+102 Garibaldi / Lagunilla
+103 San Juan de Letrán
+104 Doctores
+105 Obrera
+106 La Viga
+107 Coyuya
+108 Iztacalco
+109 Apatlaco
+110 Aculco
+111 Escuadrón 201
+112 Atlalilco
+113 Iztapalapa
+114 C. de la Estrella
+115 U.A.M. I
+116 Const. de 1917
+117 Patriotismo
+118 Chilpancingo
+119 Lázaro Cárdenas
+120 Mixiuhca
+121 Velódromo
+122 Ciudad Deportiva
+123 Puebla
+124 Insurgentes Sur
+125 Hospital 20 de Noviembre
+126 Parque de los Venados
+127 Eje Central
+128 Mexicaltzingo
+129 Culhuacán
+130 San Andrés Tomatlán
+131 Lomas Estrella
+132 Calle 11
+133 Periférico Ote.
+134 Tezonco
+135 Olivos
+136 Nopalera
+137 Zapotitlán
+138 Tlaltenco
+139 Tláhuac
+140 Pantitlan
+141 Agrícola Oriental
+142 Canal de San Juan
+143 Tepalcates
+144 Guelatao
+145 Peñón Viejo
+146 Acatitla
+147 Santa Marta
+148 Los Reyes
+149 La Paz
+150 Ciudad Azteca
+151 Plaza Aragón
+152 Olímpica
+153 Ecatepec
+154 M. Múzquiz
+155 Río de los Remedios
+156 Impulsora
+157 Nezahualcóyotl
+158 Villa de Aragón
+159 Bosque de Aragón
+160 Deportivo Oceanía
+161 Romero Rubio
+162 Flores Magón
+163 Tepito
+164 Lagunilla
+165 Buenavista
+

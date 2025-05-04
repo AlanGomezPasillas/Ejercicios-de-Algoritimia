@@ -1,0 +1,43 @@
+1 Observatorio
+2 Tacubaya
+3 Juanacatlán
+4 Chapultepec
+5 Sevilla
+6 Insurgentes
+7 Cuauhtémoc
+8 Balderas
+9 Salto del Agua
+10 Isabel la Católica
+11 Pino Suarez
+12 Merced
+13 Candelaria
+14 San Lázaro
+15 Moctezuma
+16 Balbuena
+17 Boulevard Pto. Aéreo
+18 Gómez Farías
+19 Zaragoza
+20 Pantitlán
+21 Cuatro Caminos
+22 Panteones
+23 Tacuba
+24 Cuitláhuac
+25 Popotla
+26 Colegio Militar
+27 Normal
+28 San Cosme
+29 Revolución
+30 Hidalgo
+31 Bellas Artes
+32 Allende
+33 Zócalo
+34 San Antonio Abad
+35 Chabacano
+36 Viaducto
+37 Xola
+38 Villa de Cortés
+39 Nativitas
+40 Portales
+41 Ermita
+42 General Anaya
+43 Tasqueña

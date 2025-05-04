@@ -1,0 +1,161 @@
+1 Zapata
+2 Ermita
+3 Atlalilco
+4 Mixcoac
+5 Sur
+6 de Noviembre
+7 los Venados
+8 Central
+9 Mexicaltzingo
+10 Tlahuac
+11 Culhuacan
+12 Tomatlan
+13 Lomas Estrella
+14 Calle 11
+15 Periferico Oriente
+16 Tezonco
+17 Olivos
+18 Nopalera
+19 Zapotitlan
+20 Tlaltenco
+21 Observatorio
+22 Juanacatlan
+23 Chapultepec
+24 Insurgentes
+25 Cuauhtemoc
+26 la Catolica
+27 Merced
+28 Moctezuma
+29 Balbuena
+30 Aereo
+31 Gomez Farias
+32 Zaragoza
+33 Balderas
+34 Agua
+35 Pantitlan
+36 Lazaro
+37 Candelaria
+38 Suarez
+39 Tasqueña
+40 General Anaya
+41 Portales
+42 Nativitas
+43 Cortes
+44 Xola
+45 Viaducta
+46 Zocalo
+47 Allende
+48 Revolucion
+49 Normal
+50 Cosme
+51 Popotla
+52 Militar
+53 Cuitlahuac
+54 Panteones
+55 Caminos
+56 Hidalgo
+57 Artes
+58 Abad
+59 Chabacano
+60 Tacuba
+61 Pino Suarez
+62 Potrero
+63 Tlatelolco
+64 Juarez
+65 Heroes
+66 General
+67 Etiopia
+68 Eugenia
+69 del Norte
+70 Coyoacan
+71 Viveros
+72 M. A. De Quevedo
+73 Copilco
+74 Universidad
+75 18 de Marzo
+76 Medico
+77 La Raza
+78 Indios Verdes
+79 Guerrero
+80 Talisman
+81 Bondojito
+82 Norte
+83 Servando
+84 Martin Carrera
+85 Consulado
+86 Morelos
+87 Santa Anita
+88 Jamaica
+89 Politecnico
+90 Misterios
+91 Gomez
+92 Molina
+93 Aragon
+94 Aerea
+95 Hangares
+96 Petroleo
+97 Oceania
+98 Tezozomoc
+99 Ferreria
+100 Azcapotzalco
+101 Norte 45
+102 Vallejo
+103 Lindavista
+104 Basilica
+105 El Rosario
+106 Serdan
+107 Camarones
+108 San Joaquin
+109 Auditorio
+110 Constituyentes
+111 de los Pinos
+112 San Antonio
+113 del Muerto
+114 Tacubaya
+115 Refineria de 1917
+116 Estrella
+117 UAM 1
+118 Iztapalapa
+119 Escuadron 201
+120 Aculco
+121 Apatlaco
+122 Iztacalco
+123 Coyuya
+124 La Viga
+125 Obrera
+126 Doctores
+127 de Letran
+128 Garibaldi
+129 Bellas Artes
+130 Puebla
+131 Deportiva
+132 Velodromo
+133 Mixiuhca
+134 Cardenas
+135 Chilpancingo
+136 Patriotismo
+137 Oriental
+138 San Juan
+139 Tepalcates
+140 Guelatao
+141 Peñon Viejo
+142 Acatitla
+143 Santa Marta
+144 Los Reyes
+145 La Paz
+146 Ciudad Azteca
+147 Plaza Aragon
+148 Olimpica
+149 Tecnologico
+150 M. Muzquiz
+151 Remedios
+152 Impulsora
+153 Nezahualcoyotl
+154 Villa de Aragon
+155 Bosque de Aragon
+156 Deportivo Oceania
+157 R. Rubio
+158 R. Flores Magon
+159 Tepito
+160 Lagunilla
+161 Buenavista

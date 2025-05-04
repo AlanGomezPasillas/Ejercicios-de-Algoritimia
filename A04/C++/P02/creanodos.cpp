@@ -16,7 +16,7 @@ int main() {
 	    if (*res != name){
 		names.push_back(name);
 	    } else {
-		cout << "El nombre ya existe." << endl;
+		//cout << "El nombre ya existe." << endl;
 	    }
 	} else {
 	    names.push_back(name);
